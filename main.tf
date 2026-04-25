@@ -28,7 +28,7 @@ resource "aws_security_group" "allow_http" {
 }
 
 resource "aws_instance" "docker_ec2" {
-  ami           = "ami-0f5ee92e2d63afc18"
+  ami           = "ami-0f18986364089c4ab"
   instance_type = "t2.micro"
 
   vpc_security_group_ids = [aws_security_group.allow_http.id]
