@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "allow_http" {
-  name = "allow_http"
+  name = "allow_http_v2"
 
   ingress {
     from_port   = 80
